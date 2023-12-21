@@ -1,0 +1,34 @@
+﻿Analisi Funzionale:
+* Funzione Principale:
+   * Gestisce un menu interattivo per l'utente.
+   * Offre opzioni per cuocere uova, pagare il conto o stampare l'incasso.
+   * Registra le uova cotte, calcola il totale da pagare per il cibo e aggiorna il totale complessivo.
+* Cuocere Uova:
+   * Simula la cottura di un uovo visualizzando un'animazione ASCII.
+   * L'utente può cuocere più uova scegliendo di continuare.
+* Pagare il Conto:
+   * Chiede all'utente di inserire il numero di hamburger e bevande.
+   * Calcola il totale considerando i costi degli elementi e applica uno sconto se supera una soglia.
+   * Aggiorna il totale finale.
+Analisi Tecnica:
+* Variabili Globali:
+   * contUova: Conta il numero totale di uova cotte.
+   * totaleLavoro2: Contiene il totale da pagare per il cibo per ciascun cliente.
+   * totaleFinaleLavoro2: Contiene la somma totale dei pagamenti di tutti i clienti per il cibo.
+* Metodo main:
+   * Utilizza un loop do-while per gestire il menu delle opzioni finché l'utente non sceglie di uscire (scelta1 == 0).
+   * Gestisce tre opzioni: cuocere uova, pagare il conto e stampare l'incasso.
+   * Per ogni opzione, chiama il rispettivo metodo (cotturaUovo, lavoro2).
+   * Usa uno switch per gestire le diverse opzioni.
+* Metodo attesa:
+   * Sospende l'esecuzione per un numero specificato di secondi.
+* Metodo cotturaUovo:
+   * Utilizza un loop do-while per consentire all'utente di cuocere più uova.
+   * Stampa una rappresentazione grafica ASCII di un uovo che cuoce.
+   * Utilizza il metodo attesa per simulare il tempo di cottura.
+   * Incrementa il contatore contUova per ogni uovo cotto.
+* Metodo lavoro2:
+   * Richiede all'utente di inserire il numero di hamburger e bevande.
+   * Calcola il totale senza sconto basato sul numero di hamburger e bevande inseriti.
+   * Applica uno sconto se il totale supera la soglia definita di 10 euro (sogliaSconto).
+   * Aggiorna il totale finale del lavoro 2 e lo restituisce.
