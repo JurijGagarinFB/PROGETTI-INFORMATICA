@@ -1,0 +1,81 @@
+/* Reset CSS di base */
+body,
+h1,
+p,
+form {
+    margin: 0; /* Rimuove i margini predefiniti */
+    padding: 0; /* Rimuove i padding predefiniti */
+    box-sizing: border-box; /* Include padding e bordo nelle dimensioni totali dell'elemento */
+}
+
+/* Stile del body */
+body {
+    min-height: 100vh; /* vh = viewport height, garantisce che occupi almeno tutta l'altezza della finestra */
+    display: flex; /* Abilita il layout flexbox */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    justify-content: center; /* Centra verticalmente il contenuto */
+    align-items: center; /* Centra orizzontalmente il contenuto */
+    background-color: #f4f4f4; /* Colore di sfondo grigio chiaro */
+}
+
+/* Stile comune per le sezioni principali */
+header,
+main,
+footer {
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    display: flex; /* Abilita il layout flexbox */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    align-items: center; /* Centra orizzontalmente il contenuto */
+}
+
+header {
+    margin-top: 40px; /* Spazio sopra l'header */
+}
+
+main {
+    margin: 20px; /* Margine su tutti i lati della sezione principale */
+}
+
+/* Stile del form */
+form {
+    background: #fff; /* Sfondo bianco */
+    padding: 24px 32px; /* Spaziatura interna: 24px verticale, 32px orizzontale */
+    border-radius: 8px; /* Angoli arrotondati */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Ombra leggera per effetto profondità */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stile delle etichette */
+label {
+    font-weight: 500; /* Peso del font semi-bold */
+    margin-bottom: 4px; /* Spazio sotto ogni etichetta */
+}
+
+/* Stile degli input */
+input[type="text"],
+input[type="email"] {
+    padding: 8px 12px; /* Spaziatura interna */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Angoli arrotondati */
+    width: 220px;
+    font-size: 1rem; /* rem = relativo al root element, migliore per accessibilità */
+}
+
+/* Stile del pulsante */
+button[type="submit"] {
+    margin-top: 10px; /* Spazio sopra il pulsante */
+    padding: 10px 24px; /* Spaziatura interna */
+    background-color: #0078d7;
+    color: #fff;
+    border: none; /* Rimuove il bordo */
+    border-radius: 4px; /* Angoli arrotondati */
+    font-size: 1rem; /* Dimensione font relativa */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+}
+
+/* Effetto hover */
+button[type="submit"]:hover {
+    background-color: #005fa3; /* Blu più scuro al passaggio del mouse */
+}
